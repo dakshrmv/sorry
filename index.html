@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>💝 For My Kratika 💝</title>
+    <meta name="description" content="The cutest love letter in the world, made just for Kratika 💕">
+    <meta name="theme-color" content="#ff6bae">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sparkle cursor -->
+    <div id="cursor" aria-hidden="true"></div>
+    <div id="cursor-dot" aria-hidden="true"></div>
+
+    <!-- Sparkle container -->
+    <div id="sparkles" aria-hidden="true"></div>
+
+    <!-- Floating background elements -->
+    <div id="bg-floaties" aria-hidden="true"></div>
+
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader">
+        <div class="pre-inner">
+            <div class="pre-bear">🧸</div>
+            <div class="pre-hearts">
+                <span style="--i:0">💖</span>
+                <span style="--i:1">💗</span>
+                <span style="--i:2">💝</span>
+                <span style="--i:3">💕</span>
+                <span style="--i:4">💖</span>
+            </div>
+            <p class="pre-text">Loading something super cute for you... 🌸</p>
+            <div class="pre-progress">
+                <div class="pre-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== SECTION 1: MAGICAL ENTRY PAGE ===== -->
+    <section id="envelope-section" class="section s1">
+
+        <!-- Animated gradient background orbs -->
+        <div class="magic-orb orb1" aria-hidden="true"></div>
+        <div class="magic-orb orb2" aria-hidden="true"></div>
+        <div class="magic-orb orb3" aria-hidden="true"></div>
+        <div class="magic-orb orb4" aria-hidden="true"></div>
+
+        <!-- Twinkling stars canvas -->
+        <canvas id="stars-canvas" aria-hidden="true"></canvas>
+
+        <!-- Floating clouds -->
+        <div class="cloud cloud-1" aria-hidden="true"></div>
+        <div class="cloud cloud-2" aria-hidden="true"></div>
+        <div class="cloud cloud-3" aria-hidden="true"></div>
+
+        <!-- Corner big decors -->
+        <div class="corner-decor cdtl" aria-hidden="true">
+            <span>🌸</span><span>🦋</span><span>💕</span>
+        </div>
+        <div class="corner-decor cdtr" aria-hidden="true">
+            <span>✨</span><span>🌷</span><span>💖</span>
+        </div>
+        <div class="corner-decor cdbl" aria-hidden="true">
+            <span>💗</span><span>🌺</span><span>⭐</span>
+        </div>
+        <div class="corner-decor cdbr" aria-hidden="true">
+            <span>🌸</span><span>💫</span><span>🦋</span>
+        </div>
+
+        <!-- Falling petals -->
+        <div class="petal-shower" aria-hidden="true">
+            <span style="--ps:3s;--pl:5%;--pf:0s">🌸</span>
+            <span style="--ps:4s;--pl:15%;--pf:0.5s">🌷</span>
+            <span style="--ps:3.5s;--pl:25%;--pf:1s">💕</span>
+            <span style="--ps:5s;--pl:35%;--pf:0.3s">🌸</span>
+            <span style="--ps:4.5s;--pl:45%;--pf:1.5s">⭐</span>
+            <span style="--ps:3s;--pl:55%;--pf:0.8s">🌷</span>
+            <span style="--ps:4s;--pl:65%;--pf:0.2s">💖</span>
+            <span style="--ps:5s;--pl:75%;--pf:1.2s">🌸</span>
+            <span style="--ps:3.5s;--pl:85%;--pf:0.6s">✨</span>
+            <span style="--ps:4.5s;--pl:92%;--pf:1.8s">💗</span>
+        </div>
+
+        <!-- Rainbow arc -->
+        <div class="rainbow-arc" aria-hidden="true"></div>
+
+        <div class="entry-card">
+            <!-- Glow rings around card -->
+            <div class="glow-ring gr1" aria-hidden="true"></div>
+            <div class="glow-ring gr2" aria-hidden="true"></div>
+
+            <!-- Top emojis bouncing -->
+            <div class="entry-top-emojis">
+                <span style="--ete:0s">🌸</span>
+                <span style="--ete:0.2s">💖</span>
+                <span style="--ete:0.4s">🌷</span>
+                <span style="--ete:0.6s">✨</span>
+                <span style="--ete:0.8s">🌸</span>
+            </div>
+
+            <div class="entry-title-block">
+                <div class="entry-bear">🧸</div>
+                <h2 class="entry-main-title">You Have a<br><span class="title-highlight">Love Letter!</span></h2>
+                <p class="entry-subtitle">Someone put their whole heart<br>into making this just for you 🥹💕</p>
+            </div>
+
+            <div class="entry-divider">
+                <span class="ediv-line"></span>
+                <span class="ediv-heart">💝</span>
+                <span class="ediv-line"></span>
+            </div>
+
+            <!-- Stunning envelope -->
+            <div class="entry-envelope-wrap">
+                <!-- Sparkles around envelope -->
+                <div class="env-sparkle es1">✨</div>
+                <div class="env-sparkle es2">⭐</div>
+                <div class="env-sparkle es3">💫</div>
+                <div class="env-sparkle es4">✨</div>
+                <div class="env-sparkle es5">🌸</div>
+
+                <div class="cute-envelope" id="cute-envelope">
+                    <div class="envelope-body">
+                        <div class="envelope-flap" id="envelope-flap">
+                            <div class="flap-heart">💕</div>
+                        </div>
+                        <div class="envelope-pocket">
+                            <div class="envelope-bottom-left"></div>
+                            <div class="envelope-bottom-right"></div>
+                            <div class="envelope-middle-line"></div>
+                        </div>
+                        <div class="envelope-front">
+                            <div class="envelope-stamp">🌸</div>
+                            <div class="envelope-address">
+                                <p class="to-text">To: Kratika 🐱</p>
+                                <p class="from-text">From: Daksh 💕</p>
+                            </div>
+                            <div class="envelope-stickers">
+                                <span>🌷</span><span>⭐</span><span>🦋</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Huge glowing button -->
+            <button id="open-btn" class="entry-btn">
+                <div class="entry-btn-bg"></div>
+                <div class="entry-btn-shimmer"></div>
+                <span class="entry-btn-icon">🎀</span>
+                <span class="entry-btn-text">Open With Love!</span>
+                <span class="entry-btn-icon">🎀</span>
+            </button>
+
+            <p class="entry-whisper">"someone wrote this with their whole heart, just for you..."</p>
+
+            <div class="entry-paw-row" aria-hidden="true">
+                <span>🐾</span><span>🐾</span><span>🐾</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 2: HERO ===== -->
+    <section id="hero-section" class="section s2 hidden">
+        <div class="hero-bubbles" aria-hidden="true">
+            <div class="bubble" style="--bx:10%;--bsize:60px;--bd:0s"></div>
+            <div class="bubble" style="--bx:25%;--bsize:40px;--bd:1s"></div>
+            <div class="bubble" style="--bx:50%;--bsize:80px;--bd:2s"></div>
+            <div class="bubble" style="--bx:75%;--bsize:50px;--bd:0.5s"></div>
+            <div class="bubble" style="--bx:90%;--bsize:35px;--bd:1.5s"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-emoji-row" aria-hidden="true">
+                <span style="--fe:0s">🌸</span>
+                <span style="--fe:0.3s">🦋</span>
+                <span style="--fe:0.6s">💖</span>
+                <span style="--fe:0.9s">🌷</span>
+                <span style="--fe:1.2s">⭐</span>
+            </div>
+            <p class="hero-hi" id="hero-hi"></p>
+            <div class="hero-name-wrap">
+                <h1 class="hero-name" id="hero-name">Kratika</h1>
+                <div class="hero-name-underline"></div>
+                <div class="hero-name-sparkles" aria-hidden="true">✨✨✨</div>
+            </div>
+            <p class="hero-aka">
+                <span class="aka-dash">— </span>
+                my little kitty 🐱
+                <span class="aka-dash"> —</span>
+            </p>
+            <div class="hero-tagline" id="hero-tagline"></div>
+
+            <div class="hero-emojis-float" aria-hidden="true">
+                <span style="--hfx:-120px;--hfd:0s">🌸</span>
+                <span style="--hfx:-60px;--hfd:0.5s">💖</span>
+                <span style="--hfx:0px;--hfd:1s">🐱</span>
+                <span style="--hfx:60px;--hfd:1.5s">💕</span>
+                <span style="--hfx:120px;--hfd:2s">🌷</span>
+            </div>
+
+            <div class="scroll-cue">
+                <div class="scroll-cue-inner">
+                    <span class="scroll-heart">💝</span>
+                    <p>scroll down to see more love</p>
+                    <span class="scroll-arrow">↓</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 3: DATE ===== -->
+    <section id="date-section" class="section s3 hidden">
+        <div class="section-inner">
+            <div class="sec-header">
+                <div class="sec-icon">📅</div>
+                <h2>The Day My Life Changed</h2>
+                <p class="sec-sub">a date i'll remember forever and ever 🥹</p>
+            </div>
+
+            <div class="date-card-wrap">
+                <!-- Decorative flowers -->
+                <div class="date-flower fl-tl">🌸</div>
+                <div class="date-flower fl-tr">🌷</div>
+                <div class="date-flower fl-bl">🌷</div>
+                <div class="date-flower fl-br">🌸</div>
+
+                <div class="date-card">
+                    <div class="date-card-shine"></div>
+                    <div class="date-ribbon">💘 The Day I Proposed 💘</div>
+                    <span class="date-month">AUGUST</span>
+                    <span class="date-day">8</span>
+                    <span class="date-year">2026</span>
+                    <div class="date-hearts-row">💕 💖 💗 💝 💕</div>
+                </div>
+            </div>
+
+            <div class="date-message">
+                <p>This was the day I finally gathered all my courage and told you what my heart had been screaming for so long. When you said yes, my whole world became the most beautiful place 💕</p>
+            </div>
+
+            <!-- Love Counter -->
+            <div class="love-counter">
+                <p class="counter-intro">We have been in love for...</p>
+                <div class="counter-boxes">
+                    <div class="counter-item">
+                        <div class="counter-box">
+                            <span class="c-val" id="c-days">0</span>
+                        </div>
+                        <span class="c-lbl">Days</span>
+                    </div>
+                    <div class="counter-sep">💕</div>
+                    <div class="counter-item">
+                        <div class="counter-box">
+                            <span class="c-val" id="c-hours">00</span>
+                        </div>
+                        <span class="c-lbl">Hours</span>
+                    </div>
+                    <div class="counter-sep">💕</div>
+                    <div class="counter-item">
+                        <div class="counter-box">
+                            <span class="c-val" id="c-mins">00</span>
+                        </div>
+                        <span class="c-lbl">Mins</span>
+                    </div>
+                    <div class="counter-sep">💕</div>
+                    <div class="counter-item">
+                        <div class="counter-box">
+                            <span class="c-val" id="c-secs">00</span>
+                        </div>
+                        <span class="c-lbl">Secs</span>
+                    </div>
+                </div>
+                <p class="counter-footer">...of pure happiness and smiles 🌸</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 4: GALLERY ===== -->
+    <section id="gallery-section" class="section s4 hidden">
+        <div class="section-inner">
+            <div class="sec-header">
+                <div class="sec-icon">📸</div>
+                <h2>My Favourite Face in the World</h2>
+                <p class="sec-sub">every photo of you is a masterpiece 🎨</p>
+            </div>
+
+            <div class="polaroid-wrap">
+                <div class="polaroid-slider" id="polaroid-slider">
+
+                    <div class="polaroid">
+                        <div class="polaroid-tape tape-l"></div>
+                        <div class="polaroid-tape tape-r"></div>
+                        <div class="polaroid-img">
+                            <img src="images/photo1.jpeg" alt="Kratika" loading="lazy">
+                        </div>
+                        <div class="polaroid-bottom">
+                            <p>The smile that stole my heart 💕</p>
+                        </div>
+                    </div>
+
+                    <div class="polaroid">
+                        <div class="polaroid-tape tape-l"></div>
+                        <div class="polaroid-tape tape-r"></div>
+                        <div class="polaroid-img">
+                            <img src="images/photo2.jpeg" alt="Kratika" loading="lazy">
+                        </div>
+                        <div class="polaroid-bottom">
+                            <p>Party queen vibes ✨</p>
+                        </div>
+                    </div>
+
+                    <div class="polaroid">
+                        <div class="polaroid-tape tape-l"></div>
+                        <div class="polaroid-tape tape-r"></div>
+                        <div class="polaroid-img">
+                            <img src="images/photo3.jpeg" alt="Kratika" loading="lazy">
+                        </div>
+                        <div class="polaroid-bottom">
+                            <p>Elegance personified 🌹</p>
+                        </div>
+                    </div>
+
+                    <div class="polaroid">
+                        <div class="polaroid-tape tape-l"></div>
+                        <div class="polaroid-tape tape-r"></div>
+                        <div class="polaroid-img">
+                            <img src="images/photo4.jpeg" alt="Kratika" loading="lazy">
+                        </div>
+                        <div class="polaroid-bottom">
+                            <p>Gorgeous in every way 💖</p>
+                        </div>
+                    </div>
+
+                    <div class="polaroid">
+                        <div class="polaroid-tape tape-l"></div>
+                        <div class="polaroid-tape tape-r"></div>
+                        <div class="polaroid-img">
+                            <img src="images/photo5.jpeg" alt="Kratika" loading="lazy">
+                        </div>
+                        <div class="polaroid-bottom">
+                            <p>Traditional beauty 🪷</p>
+                        </div>
+                    </div>
+
+                    <div class="polaroid">
+                        <div class="polaroid-tape tape-l"></div>
+                        <div class="polaroid-tape tape-r"></div>
+                        <div class="polaroid-img">
+                            <img src="images/photo8.jpeg" alt="Kratika" loading="lazy">
+                        </div>
+                        <div class="polaroid-bottom">
+                            <p>Those eyes... I'm lost 👀💕</p>
+                        </div>
+                    </div>
+
+                    <div class="polaroid">
+                        <div class="polaroid-tape tape-l"></div>
+                        <div class="polaroid-tape tape-r"></div>
+                        <div class="polaroid-img">
+                            <img src="images/photo9.jpeg" alt="Kratika" loading="lazy">
+                        </div>
+                        <div class="polaroid-bottom">
+                            <p>The cutest kitty ever 🐱</p>
+                        </div>
+                    </div>
+
+                    <div class="polaroid">
+                        <div class="polaroid-tape tape-l"></div>
+                        <div class="polaroid-tape tape-r"></div>
+                        <div class="polaroid-img">
+                            <img src="images/photo10.jpeg" alt="Kratika" loading="lazy">
+                        </div>
+                        <div class="polaroid-bottom">
+                            <p>Us — my favourite photo 💑</p>
+                        </div>
+                    </div>
+
+                    <div class="polaroid">
+                        <div class="polaroid-tape tape-l"></div>
+                        <div class="polaroid-tape tape-r"></div>
+                        <div class="polaroid-img">
+                            <img src="images/photo11.jpeg" alt="Kratika" loading="lazy">
+                        </div>
+                        <div class="polaroid-bottom">
+                            <p>My sunshine on earth 🌻</p>
+                        </div>
+                    </div>
+
+                    <div class="polaroid">
+                        <div class="polaroid-tape tape-l"></div>
+                        <div class="polaroid-tape tape-r"></div>
+                        <div class="polaroid-img">
+                            <img src="images/photo12.jpeg" alt="Kratika" loading="lazy">
+                        </div>
+                        <div class="polaroid-bottom">
+                            <p>My hello kitty 🎀🐱</p>
+                        </div>
+                    </div>
+
+                    <div class="polaroid">
+                        <div class="polaroid-tape tape-l"></div>
+                        <div class="polaroid-tape tape-r"></div>
+                        <div class="polaroid-img">
+                            <img src="images/photo13.jpeg" alt="Kratika" loading="lazy">
+                        </div>
+                        <div class="polaroid-bottom">
+                            <p>Beauty in every angle 🌸</p>
+                        </div>
+                    </div>
+
+                    <div class="polaroid">
+                        <div class="polaroid-tape tape-l"></div>
+                        <div class="polaroid-tape tape-r"></div>
+                        <div class="polaroid-img">
+                            <img src="images/photo7.jpeg" alt="Kratika" loading="lazy">
+                        </div>
+                        <div class="polaroid-bottom">
+                            <p>My queen in every frame 👑</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="gallery-nav">
+                    <button class="nav-btn" id="g-prev" aria-label="Previous">‹</button>
+                    <div class="gallery-count">
+                        <span id="g-cur">1</span> / <span id="g-tot">12</span>
+                    </div>
+                    <button class="nav-btn" id="g-next" aria-label="Next">›</button>
+                </div>
+                <div class="gallery-dots" id="gallery-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 5: LOVE LETTER ===== -->
+    <section id="letter-section" class="section s5 hidden">
+        <div class="section-inner">
+            <div class="sec-header">
+                <div class="sec-icon">💌</div>
+                <h2>A Letter From My Heart</h2>
+                <p class="sec-sub">every word is a piece of my soul 🥹</p>
+            </div>
+
+            <div class="letter-paper">
+                <div class="letter-deco lt">🌸</div>
+                <div class="letter-deco rt">🌷</div>
+                <div class="letter-lines-bg" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="letter-content">
+                    <p class="letter-greet">My Dearest Kratika,</p>
+                    <p>I don't even know where to begin. How do you put into words something that feels bigger than words themselves?</p>
+                    <p>You know, before August 8th, I used to think love was just a word people threw around. But then you happened. And suddenly, that word became the most powerful thing in my universe. 💫</p>
+                    <p>I call you my kitty 🐱 because just like a cat, you walked into my life so softly, so quietly... and before I knew it, you had made my heart your permanent home. And trust me, I never want you to leave.</p>
+                    <p>Every time I see your face, my heart does this weird thing where it forgets how to beat for a second and then starts racing like crazy. Your smile? It's not just a smile, Kratika — it's the reason I believe beautiful things exist in this world.</p>
+                    <p>Those eyes of yours... I could write poems about them. I could get lost in them and never want to find my way back. They hold the entire galaxy for me.</p>
+                    <p>I know it's only been a few days since I proposed, but it feels like you've been a part of me forever. Like my soul was always waiting for yours. And now that I've found you, I'm never letting go.</p>
+                    <p>I promise you this — I will spend every single day making sure you know how loved you are. In your happiest moments and your saddest ones. I'll be right there. Always.</p>
+                    <p>You're not just my girlfriend, Kratika. You're my best friend, my safe place, my favourite person, my forever human.</p>
+                    <p>I love you more than all the stars in the sky, more than all the waves in the ocean, more than words could ever say.</p>
+                    <p class="letter-close">Yours forever and always,</p>
+                    <p class="letter-sig">Daksh 💕</p>
+                    <p class="letter-ps">P.S. — You're the best thing that ever happened to me. Never forget that. 🐱💖</p>
+                </div>
+                <div class="letter-seal">
+                    <span>💌</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 6: WHY I LOVE YOU ===== -->
+    <section id="reasons-section" class="section s6 hidden">
+        <div class="section-inner">
+            <div class="sec-header">
+                <div class="sec-icon">💝</div>
+                <h2>Why I Love You</h2>
+                <p class="sec-sub">a million reasons, here are just a few 🌸</p>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-bubble" style="--rb-delay:0.05s">
+                    <div class="rb-icon">😊</div>
+                    <h3>Your Smile</h3>
+                    <p>One smile from you and my worst day becomes my absolute best. You have the kind of smile that can heal anything.</p>
+                </div>
+                <div class="reason-bubble" style="--rb-delay:0.15s">
+                    <div class="rb-icon">🐱</div>
+                    <h3>Your Cuteness</h3>
+                    <p>Everything about you is adorable. The way you talk, laugh, the way you look at me — my heart can't handle it!</p>
+                </div>
+                <div class="reason-bubble" style="--rb-delay:0.25s">
+                    <div class="rb-icon">👀</div>
+                    <h3>Those Eyes</h3>
+                    <p>Your beautiful eyes are my favourite place to get lost. They hold the entire universe in them.</p>
+                </div>
+                <div class="reason-bubble" style="--rb-delay:0.35s">
+                    <div class="rb-icon">💪</div>
+                    <h3>Your Strength</h3>
+                    <p>You're the bravest, strongest person I know. You inspire me to be better every single day.</p>
+                </div>
+                <div class="reason-bubble" style="--rb-delay:0.45s">
+                    <div class="rb-icon">🤗</div>
+                    <h3>Your Heart</h3>
+                    <p>The way you care about people shows what a beautiful soul you are. The world is so lucky to have you.</p>
+                </div>
+                <div class="reason-bubble" style="--rb-delay:0.55s">
+                    <div class="rb-icon">✨</div>
+                    <h3>Just... YOU</h3>
+                    <p>I don't need a reason. I love you because you're you — and you are the most perfect thing in my world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 7: PROMISES ===== -->
+    <section id="promises-section" class="section s7 hidden">
+        <div class="section-inner">
+            <div class="sec-header">
+                <div class="sec-icon">🤞</div>
+                <h2>My Pinky Promises To You</h2>
+                <p class="sec-sub">promises I will never ever break 💕</p>
+            </div>
+            <div class="promise-list">
+                <div class="promise-card" style="--pc-delay:0.05s">
+                    <span class="promise-emoji">🌅</span>
+                    <p>I promise to make every morning feel special for you</p>
+                </div>
+                <div class="promise-card" style="--pc-delay:0.12s">
+                    <span class="promise-emoji">😂</span>
+                    <p>I promise to make you laugh even on your worst days</p>
+                </div>
+                <div class="promise-card" style="--pc-delay:0.19s">
+                    <span class="promise-emoji">🤝</span>
+                    <p>I promise to hold your hand through every storm</p>
+                </div>
+                <div class="promise-card" style="--pc-delay:0.26s">
+                    <span class="promise-emoji">👂</span>
+                    <p>I promise to always listen, even when words aren't enough</p>
+                </div>
+                <div class="promise-card" style="--pc-delay:0.33s">
+                    <span class="promise-emoji">🏠</span>
+                    <p>I promise to be your safe place, your home, your comfort</p>
+                </div>
+                <div class="promise-card" style="--pc-delay:0.40s">
+                    <span class="promise-emoji">🌙</span>
+                    <p>I promise to love you more with every single passing day</p>
+                </div>
+                <div class="promise-card" style="--pc-delay:0.47s">
+                    <span class="promise-emoji">🐱</span>
+                    <p>I promise to always call you my kitty and mean it with all my heart</p>
+                </div>
+                <div class="promise-card" style="--pc-delay:0.54s">
+                    <span class="promise-emoji">♾️</span>
+                    <p>I promise to never stop choosing you — today, tomorrow, forever</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LOVE QUOTE TICKER ===== -->
+    <div class="love-ticker hidden" id="love-ticker">
+        <div class="ticker-inner">
+            <span>💕 you are my favourite person &nbsp;&nbsp;</span>
+            <span>🌸 my heart skips a beat every time I see you &nbsp;&nbsp;</span>
+            <span>✨ loving you is the best thing I've ever done &nbsp;&nbsp;</span>
+            <span>🐱 you're my kitty and my whole world &nbsp;&nbsp;</span>
+            <span>💖 I choose you, always &nbsp;&nbsp;</span>
+            <span>🌷 you make every day feel like magic &nbsp;&nbsp;</span>
+            <span>💕 you are my favourite person &nbsp;&nbsp;</span>
+            <span>🌸 my heart skips a beat every time I see you &nbsp;&nbsp;</span>
+            <span>✨ loving you is the best thing I've ever done &nbsp;&nbsp;</span>
+            <span>🐱 you're my kitty and my whole world &nbsp;&nbsp;</span>
+            <span>💖 I choose you, always &nbsp;&nbsp;</span>
+            <span>🌷 you make every day feel like magic &nbsp;&nbsp;</span>
+        </div>
+    </div>
+
+    <!-- ===== SECTION NEW-A: HEARTBEAT COUNTER ===== -->
+    <section id="heartbeat-section" class="section s-hb hidden">
+        <div class="hb-bg-pulse" aria-hidden="true"></div>
+        <div class="section-inner">
+            <div class="sec-header">
+                <div class="sec-icon">💓</div>
+                <h2>My Heart Beats For You</h2>
+                <p class="sec-sub">every single beat, since the very first day 🥹</p>
+            </div>
+
+            <div class="heartbeat-wrap">
+                <div class="big-heart" id="big-heart">
+                    <span class="heart-emoji">💖</span>
+                    <div class="heart-ring r1"></div>
+                    <div class="heart-ring r2"></div>
+                    <div class="heart-ring r3"></div>
+                </div>
+
+                <div class="hb-stats">
+                    <div class="hb-stat-card hb-main">
+                        <p class="hbs-label">Since August 8, 2026 my heart has beaten approximately</p>
+                        <div class="hbs-count" id="hb-count">0</div>
+                        <p class="hbs-unit">times — every single beat, for you 💕</p>
+                    </div>
+
+                    <div class="hb-mini-cards">
+                        <div class="hb-mini">
+                            <span class="hbm-icon">⏱️</span>
+                            <span class="hbm-val" id="hb-mins-total">0</span>
+                            <span class="hbm-lbl">minutes together</span>
+                        </div>
+                        <div class="hb-mini">
+                            <span class="hbm-icon">💭</span>
+                            <span class="hbm-val" id="hb-thoughts">0</span>
+                            <span class="hbm-lbl">times I thought of you</span>
+                        </div>
+                        <div class="hb-mini">
+                            <span class="hbm-icon">😊</span>
+                            <span class="hbm-val" id="hb-smiles">0</span>
+                            <span class="hbm-lbl">smiles you gave me</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="hb-footer">And this number will never, ever stop growing 🌸</p>
+        </div>
+    </section>
+
+    <!-- ===== SECTION NEW-B: I LOVE YOU IN EVERY LANGUAGE ===== -->
+    <section id="languages-section" class="section s-lang hidden">
+        <div class="section-inner">
+            <div class="sec-header">
+                <div class="sec-icon">🌍</div>
+                <h2>I Love You</h2>
+                <p class="sec-sub">in every language, in every universe, always 💕</p>
+            </div>
+
+            <div class="lang-center">
+                <div class="lang-main-display">
+                    <div class="lang-display-card" id="lang-display-card">
+                        <div class="lang-flag" id="lang-flag">🇮🇳</div>
+                        <div class="lang-ily" id="lang-ily">Main Tumse Pyar Karta Hoon</div>
+                        <div class="lang-name" id="lang-name">Hindi</div>
+                    </div>
+                    <p class="lang-always">...no matter what language, the meaning is the same 🥹</p>
+                </div>
+            </div>
+
+            <div class="lang-grid">
+                <div class="lang-pill active" data-ily="Main Tumse Pyar Karta Hoon" data-lang="Hindi" data-flag="🇮🇳">🇮🇳 Hindi</div>
+                <div class="lang-pill" data-ily="I Love You" data-lang="English" data-flag="🇬🇧">🇬🇧 English</div>
+                <div class="lang-pill" data-ily="Je t'aime" data-lang="French" data-flag="🇫🇷">🇫🇷 French</div>
+                <div class="lang-pill" data-ily="Te Quiero" data-lang="Spanish" data-flag="🇪🇸">🇪🇸 Spanish</div>
+                <div class="lang-pill" data-ily="Ti Amo" data-lang="Italian" data-flag="🇮🇹">🇮🇹 Italian</div>
+                <div class="lang-pill" data-ily="Ich Liebe Dich" data-lang="German" data-flag="🇩🇪">🇩🇪 German</div>
+                <div class="lang-pill" data-ily="Aishiteru" data-lang="Japanese" data-flag="🇯🇵">🇯🇵 Japanese</div>
+                <div class="lang-pill" data-ily="Wo Ai Ni" data-lang="Chinese" data-flag="🇨🇳">🇨🇳 Chinese</div>
+                <div class="lang-pill" data-ily="Saranghae" data-lang="Korean" data-flag="🇰🇷">🇰🇷 Korean</div>
+                <div class="lang-pill" data-ily="Ana Behibbek" data-lang="Arabic" data-flag="🌙">🌙 Arabic</div>
+                <div class="lang-pill" data-ily="Eu te amo" data-lang="Portuguese" data-flag="🇧🇷">🇧🇷 Portuguese</div>
+                <div class="lang-pill" data-ily="Ya Tebya Lyublyu" data-lang="Russian" data-flag="🇷🇺">🇷🇺 Russian</div>
+                <div class="lang-pill" data-ily="Mahal Kita" data-lang="Filipino" data-flag="🇵🇭">🇵🇭 Filipino</div>
+                <div class="lang-pill" data-ily="Jag älskar dig" data-lang="Swedish" data-flag="🇸🇪">🇸🇪 Swedish</div>
+                <div class="lang-pill" data-ily="Seni Seviyorum" data-lang="Turkish" data-flag="🇹🇷">🇹🇷 Turkish</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION NEW-C: OUR DREAMS TOGETHER ===== -->
+    <section id="dreams-section" class="section s-dreams hidden">
+        <div class="section-inner">
+            <div class="sec-header">
+                <div class="sec-icon">🌙</div>
+                <h2>Our Dreams Together</h2>
+                <p class="sec-sub">a little list of all the magic we'll make 🌟</p>
+            </div>
+
+            <div class="dreams-grid">
+                <div class="dream-card" style="--dc-d:0.05s;--dc-c:#fff0f7">
+                    <div class="dc-icon">✈️</div>
+                    <h3>Travel the World</h3>
+                    <p>Hold hands in Paris, watch sunsets in Bali, and get lost together in every beautiful city 🗺️</p>
+                    <div class="dc-tag">Adventure</div>
+                </div>
+                <div class="dream-card" style="--dc-d:0.12s;--dc-c:#f0e8ff">
+                    <div class="dc-icon">🌅</div>
+                    <h3>Morning Coffee Ritual</h3>
+                    <p>Every morning, two cups of chai, you still sleepy, me just staring at how beautiful you are 🫶</p>
+                    <div class="dc-tag">Everyday Magic</div>
+                </div>
+                <div class="dream-card" style="--dc-d:0.19s;--dc-c:#fff8e0">
+                    <div class="dc-icon">🎬</div>
+                    <h3>Movie Marathon Nights</h3>
+                    <p>Blankets, popcorn, your head on my shoulder, and your sleepy complaints about the movie 🍿</p>
+                    <div class="dc-tag">Cozy Nights</div>
+                </div>
+                <div class="dream-card" style="--dc-d:0.26s;--dc-c:#e8fff0">
+                    <div class="dc-icon">🏡</div>
+                    <h3>Our Own Little Home</h3>
+                    <p>A cozy home that smells like you, with fairy lights and a garden and so much love in every corner 🌸</p>
+                    <div class="dc-tag">Our Future</div>
+                </div>
+                <div class="dream-card" style="--dc-d:0.33s;--dc-c:#fff0e8">
+                    <div class="dc-icon">🎂</div>
+                    <h3>Surprise Birthdays</h3>
+                    <p>Every year making your birthday more special than the last — you deserve the whole world, literally 🎊</p>
+                    <div class="dc-tag">Celebrations</div>
+                </div>
+                <div class="dream-card" style="--dc-d:0.40s;--dc-c:#e8f0ff">
+                    <div class="dc-icon">📸</div>
+                    <h3>A Wall Full of Us</h3>
+                    <p>A Polaroid wall full of all our memories — every trip, every laugh, every moment together 💕</p>
+                    <div class="dc-tag">Memories</div>
+                </div>
+            </div>
+
+            <div class="dreams-footer">
+                <p class="df-text">These are just the beginning, Kratika. With you, every dream feels possible 🥹✨</p>
+                <div class="df-hearts">💕 💖 💗 💝 💕</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 8: PROPOSAL (CINEMATIC) ===== -->
+    <section id="proposal-section" class="section s8 hidden">
+
+        <!-- Shooting stars + petals canvas -->
+        <canvas id="prop-canvas" aria-hidden="true"></canvas>
+
+        <!-- Falling rose petals -->
+        <div class="prop-petal-rain" aria-hidden="true">
+            <span style="--pp:5%;--ps:4s;--pf:0s">🌹</span>
+            <span style="--pp:12%;--ps:5s;--pf:0.6s">🌸</span>
+            <span style="--pp:20%;--ps:3.5s;--pf:1.2s">🌷</span>
+            <span style="--pp:30%;--ps:5.5s;--pf:0.3s">🌹</span>
+            <span style="--pp:40%;--ps:4s;--pf:1.8s">🌸</span>
+            <span style="--pp:52%;--ps:3s;--pf:0.9s">🌹</span>
+            <span style="--pp:63%;--ps:4.5s;--pf:0.4s">🌷</span>
+            <span style="--pp:74%;--ps:5s;--pf:1.5s">🌸</span>
+            <span style="--pp:83%;--ps:3.5s;--pf:0.7s">🌹</span>
+            <span style="--pp:92%;--ps:4s;--pf:2s">🌷</span>
+        </div>
+
+        <!-- Candle lights (left & right) -->
+        <div class="prop-candle left-candle" aria-hidden="true">
+            <span class="candle-flame">🕯️</span>
+            <span class="candle-flame">🕯️</span>
+            <span class="candle-flame">🕯️</span>
+        </div>
+        <div class="prop-candle right-candle" aria-hidden="true">
+            <span class="candle-flame">🕯️</span>
+            <span class="candle-flame">🕯️</span>
+            <span class="candle-flame">🕯️</span>
+        </div>
+
+        <!-- ===== PHASE 1: BUILD-UP ===== -->
+        <div class="prop-phase" id="prop-phase1">
+            <div class="phase1-inner">
+                <div class="p1-ring-wrap">
+                    <div class="p1-ring-glow"></div>
+                    <div class="p1-ring">💍</div>
+                </div>
+                <p class="p1-line" id="p1-l1"></p>
+                <p class="p1-line p1-l2" id="p1-l2"></p>
+                <p class="p1-line p1-l3" id="p1-l3"></p>
+                <button class="p1-ready-btn" id="p1-ready" style="display:none">
+                    <span>I'm ready... 💕</span>
+                    <div class="p1-btn-shine"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- ===== PHASE 2: CONFESS ===== -->
+        <div class="prop-phase hidden" id="prop-phase2">
+            <div class="phase2-inner">
+                <div class="p2-emoji-row" aria-hidden="true">🌹 💕 🌹</div>
+                <p class="p2-line" id="p2-l1"></p>
+                <p class="p2-line p2-bold" id="p2-l2"></p>
+                <button class="p2-next-btn" id="p2-next" style="display:none">
+                    <span>Ask me... 🥺</span>
+                    <div class="p1-btn-shine"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- ===== PHASE 3: THE QUESTION ===== -->
+        <div class="prop-phase hidden" id="prop-phase3">
+            <div class="phase3-inner">
+
+                <!-- Animated name -->
+                <div class="pq-name" aria-label="Kratika">
+                    <span class="pq-letter" style="--li:0">K</span>
+                    <span class="pq-letter" style="--li:1">r</span>
+                    <span class="pq-letter" style="--li:2">a</span>
+                    <span class="pq-letter" style="--li:3">t</span>
+                    <span class="pq-letter" style="--li:4">i</span>
+                    <span class="pq-letter" style="--li:5">k</span>
+                    <span class="pq-letter" style="--li:6">a</span>
+                    <span class="pq-letter pq-comma" style="--li:7">,</span>
+                </div>
+
+                <div class="pq-sparkle-row" aria-hidden="true">✨ 💕 ✨</div>
+
+                <!-- The big question -->
+                <div class="pq-question-card">
+                    <div class="pq-card-glow"></div>
+                    <div class="pq-ring-icon">💍</div>
+                    <h1 class="pq-main-text">
+                        <span class="pq-word w1">Will</span>
+                        <span class="pq-word w2">You</span>
+                        <span class="pq-word w3">Be</span>
+                        <br>
+                        <span class="pq-word w4">My</span>
+                        <span class="pq-word w5 w-special">Girlfriend?</span>
+                    </h1>
+                    <p class="pq-sub-text">your Daksh is down on one knee, kitty 🐱🐾</p>
+                </div>
+
+                <!-- Heart meter -->
+                <div class="love-meter-wrap">
+                    <p class="lm-label">💕 My love for you</p>
+                    <div class="love-meter-bar">
+                        <div class="lm-fill" id="lm-fill"></div>
+                        <div class="lm-text">INFINITE ∞</div>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="pq-btns" id="prop-btns">
+                    <button class="pq-yes-btn" id="btn-yes">
+                        <div class="yes-bg-anim"></div>
+                        <div class="yes-shimmer"></div>
+                        <span class="yes-icon">💍</span>
+                        <span class="yes-text">YES, Forever! 💕</span>
+                        <span class="yes-icon">💖</span>
+                    </button>
+                    <button class="pq-no-btn" id="btn-no">No 😢</button>
+                </div>
+
+                <p class="pq-no-msg" id="no-msg"></p>
+                <p class="pq-hint" id="pq-hint">👆 (psst — Kratika, you already know the answer 🥺)</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===== SECTION 9: CELEBRATION ===== -->
+    <section id="celebration-section" class="section s9 hidden">
+        <canvas id="fireworks-canvas" aria-hidden="true"></canvas>
+        <div class="cel-wrap">
+            <div class="cel-top-emojis" aria-hidden="true">
+                <span>🎉</span><span>💕</span><span>🥳</span><span>💖</span>
+                <span>🎊</span><span>🐱</span><span>💗</span>
+            </div>
+            <h1 class="cel-title">
+                <span>She</span>
+                <span>Said</span>
+                <span>YES!</span>
+            </h1>
+            <div class="cel-hearts" aria-hidden="true">💕💖💗💝💘💕💖</div>
+            <p class="cel-subtitle">I knew it, my kitty! 🐱💕</p>
+            <p class="cel-message">You just made me the happiest person alive. I promise to spend every day proving that saying yes was the best decision you ever made.</p>
+
+            <div class="cel-card">
+                <div class="cel-card-top">💖 💗 💕 💝 💘</div>
+                <h3>Our Love Story</h3>
+                <div class="cel-names-row">
+                    <span class="cel-name">Daksh</span>
+                    <div class="cel-heart-anim">💕</div>
+                    <span class="cel-name">Kratika</span>
+                </div>
+                <p class="cel-since">Together since August 8, 2026</p>
+                <div class="cel-infinity">
+                    <span>∞</span>
+                    <p>Forever &amp; Always</p>
+                </div>
+            </div>
+
+            <div class="cel-final">
+                <p>Thank you for being mine. Thank you for choosing me. Thank you for existing. 🥹</p>
+                <p class="cel-sign">— Your Daksh 💕🐱</p>
+            </div>
+
+            <div class="cel-bottom-paws" aria-hidden="true">
+                <span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span>
+            </div>
+        </div>
+    </section>
+
+    <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>

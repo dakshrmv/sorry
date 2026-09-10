@@ -11,16 +11,19 @@
   <style>
     /* ── RESET ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
     body {
       background: #0f0808;
       color: #f5ede0;
       font-family: 'Cormorant Garamond', Georgia, serif;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
+      /* iPhone safe area */
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
     }
-    img { display: block; max-width: 100%; image-orientation: from-image; }
-    button, a { cursor: pointer; font-family: inherit; }
+    img { display: block; max-width: 100%; image-orientation: from-image; -webkit-user-drag: none; }
+    button, a { cursor: pointer; font-family: inherit; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
 
     /* ── PARTICLES ── */
     #particles { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
@@ -28,7 +31,9 @@
     /* ── HERO ── */
     .hero {
       position: relative;
+      height: 100vh;
       height: 100dvh;
+      min-height: -webkit-fill-available;
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -148,6 +153,7 @@
       scroll-snap-type: x mandatory;
       scrollbar-width: none;
       -ms-overflow-style: none;
+      -webkit-overflow-scrolling: touch;
     }
     .strip-scroll::-webkit-scrollbar { display: none; }
 

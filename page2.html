@@ -10,16 +10,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Great+Vibes&family=Lato:wght@300;400&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
     body {
       background: #0f0808;
       color: #f5ede0;
       font-family: 'Cormorant Garamond', Georgia, serif;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
     }
-    img { display: block; max-width: 100%; image-orientation: from-image; }
-    button, a { cursor: pointer; font-family: inherit; }
+    img { display: block; max-width: 100%; image-orientation: from-image; -webkit-user-drag: none; }
+    button, a { cursor: pointer; font-family: inherit; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
 
     #particles2 { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
 
